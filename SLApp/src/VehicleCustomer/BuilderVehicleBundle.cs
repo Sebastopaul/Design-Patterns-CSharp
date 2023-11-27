@@ -12,7 +12,7 @@ public abstract class BuilderVehicleBundle
   public Bundle Result()
   {
     if (Bundle == null)
-      throw new Exception("Bundle is null");
+      throw new NullReferenceException("Bundle is null");
     
     return Bundle;
   }
