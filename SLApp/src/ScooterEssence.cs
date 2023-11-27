@@ -1,5 +1,9 @@
-namespace SLApp;
-
-class ScooterEssence: Scooter
-{
+namespace SLApp {
+    class ScooterEssence: Scooter
+    {
+        public getName()
+        {
+            return _name. " Essence";
+        }
+    }
 }

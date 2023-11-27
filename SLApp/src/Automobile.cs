@@ -1,9 +1,11 @@
-namespace SLApp;
-
-class Automobile
-{
-    public string getNom()
+namespace SLApp {
+    class Automobile
     {
-        return "Automobile";
+        string _name = "Automobile";
+    
+        public string getName()
+        {
+            return _name;
+        }
     }
 }

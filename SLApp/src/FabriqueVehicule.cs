@@ -1,6 +1,7 @@
-namespace SLApp;
-interface FabriqueVehicule
-{
-    public Automobile creeAutomobile();
-    public Scooter creeScooter();
+namespace SLApp {
+    interface IFabriqueVehicule
+    {
+        public Automobile creeAutomobile();
+        public Scooter creeScooter();
+    }
 }

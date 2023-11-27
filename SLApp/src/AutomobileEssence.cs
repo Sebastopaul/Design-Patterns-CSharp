@@ -1,5 +1,9 @@
-namespace SLApp;
-
-class AutomobileEssence: Automobile
-{
+namespace SLApp {
+    class AutomobileEssence: Automobile
+    {
+        public string getName()
+        {
+            return _name . " Essence";
+        }
+    }
 }

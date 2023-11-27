@@ -1,14 +1,14 @@
-namespace SLApp;
-
-class FabriqueVehiculeElectrique: FabriqueVehicule
-{
-    public Automobile creeAutomobile()
+namespace SLApp {
+    class FabriqueVehiculeElectrique: FabriqueVehicule
     {
-        return new AutomobileElectrique("Automobile électrique");
-    }
-
-    public Scooter creeScooter()
-    {
-        return new ScooterElectrique("Scooter électrique");
+        public Automobile creeAutomobile()
+        {
+            return new AutomobileElectrique("Automobile électrique");
+        }
+    
+        public Scooter creeScooter()
+        {
+            return new ScooterElectrique("Scooter électrique");
+        }
     }
 }
