@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SLApp.FactoryMethod;
+namespace SLApp.Factory;
 
 public abstract class Customer
 {

@@ -9,7 +9,9 @@
 
   <ItemGroup>
     <Folder Include="src\Builder\" />
-    <Folder Include="src\FactoryMethod\" />
+    <Folder Include="src\Factory\" />
+    <Folder Include="src\Prototype\" />
+    <Folder Include="src\Singleton\" />
   </ItemGroup>
 
 </Project>

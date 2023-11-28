@@ -1,4 +1,4 @@
-namespace SLApp.FactoryMethod;
+namespace SLApp.Factory;
 
 public static class User
 {

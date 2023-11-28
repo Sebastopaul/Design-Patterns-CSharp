@@ -1,6 +1,6 @@
 using System;
 
-namespace SLApp.FactoryMethod;
+namespace SLApp.Factory;
 
 public class OrderCredit : Order
 {

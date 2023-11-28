@@ -1,4 +1,4 @@
-namespace SLApp.FactoryMethod;
+namespace SLApp.Factory;
 
 public class CustomerCredit : Customer
 {
