@@ -1,4 +1,4 @@
-namespace SLApp.Decorator;
+namespace SLApp.Bridge;
 
 public abstract class FormRegistration
 {

@@ -1,6 +1,6 @@
 using System;
 
-namespace SLApp.Decorator;
+namespace SLApp.Bridge;
 
 public class FormImplHtml : IFormImpl
 {
