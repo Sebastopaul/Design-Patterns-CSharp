@@ -25,4 +25,9 @@ public class Company
     {
         return _cars.Count + _subsidiaries.Sum(subsidiary => subsidiary.CountCars());
     }
+    
+    public int GetTotalPower()
+    {
+        return _cars.Sum(car => car.GetPower()) + _subsidiaries.Sum(subsidiary => subsidiary.GetTotalPower());
+    }
 }
