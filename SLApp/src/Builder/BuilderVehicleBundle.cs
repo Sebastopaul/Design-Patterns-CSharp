@@ -1,5 +1,5 @@
 using System;
-namespace SLApp.VehicleCustomer;
+namespace SLApp.Builder;
 
 public abstract class BuilderVehicleBundle
 {

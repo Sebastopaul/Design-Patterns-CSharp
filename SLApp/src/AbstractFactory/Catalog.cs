@@ -1,6 +1,6 @@
 using System;
 
-namespace SLApp.Catalog;
+namespace SLApp.AbstractFactory;
 
 public static class Catalog
 {
@@ -19,16 +19,13 @@ public static class Catalog
                 Console.WriteLine(BadChoice);
             }
         }
-            
-        switch (choice) {
-            case "1":
-                factory = new CreateVehicleElectric();
-                break;
-            default :
-                factory = new CreateVehicleOil();
-                break;
-        }
-            
+
+        factory = choice switch
+        {
+            "1" => new CreateVehicleElectric(),
+            _ => new CreateVehicleOil()
+        };
+
         for (choice = ""; choice != "1" && choice != "2";)
         {
             Console.WriteLine("Do you want cars (1) or scooters (2) ? ");

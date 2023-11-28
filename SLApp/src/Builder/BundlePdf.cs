@@ -1,18 +1,18 @@
 using System;
 
-namespace SLApp.VehicleCustomer;
+namespace SLApp.Builder;
 
-public class BundleHtml : Bundle
+public class BundlePdf : Bundle
 {
   public override void AddDocument(string document)
   {
-    if (document.StartsWith("<HTML>"))
+    if (document.StartsWith("<PDF>"))
       Content.Add(document);
   }
 
   public override void Print()
   {
-    Console.WriteLine("Bundle HTML");
+    Console.WriteLine("Bundle PDF");
     foreach (var s in Content)
       Console.WriteLine(s);
   }

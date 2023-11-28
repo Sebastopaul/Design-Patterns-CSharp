@@ -1,4 +1,4 @@
-namespace SLApp.Catalog;
+namespace SLApp.AbstractFactory;
 
 public abstract class Scooter
 {

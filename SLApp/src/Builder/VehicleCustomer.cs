@@ -1,6 +1,6 @@
 using System;
 
-namespace SLApp.VehicleCustomer;
+namespace SLApp.Builder;
 
 public static class VehicleCustomer
 {

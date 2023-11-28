@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace SLApp.VehicleCustomer;
+namespace SLApp.Builder;
 
 public abstract class Bundle
 {

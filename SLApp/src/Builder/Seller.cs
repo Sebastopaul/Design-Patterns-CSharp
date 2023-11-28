@@ -1,4 +1,4 @@
-namespace SLApp.VehicleCustomer;
+namespace SLApp.Builder;
 
 public class Seller
 {
