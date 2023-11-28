@@ -7,10 +7,10 @@ public static class User
 {
     public static int Run()
     {
-        Company company1 = new Company(5);
-        Company company2 = new Company(6);
-        Company company3 = new Company(2);
-        Company mainCompany = new Company(4);
+        var company1 = new Company(5);
+        var company2 = new Company(6);
+        var company3 = new Company(2);
+        var mainCompany = new Company(4);
         
         company1.AddSubsidiary(new Company(8));
         company1.AddSubsidiary(new Company(7));
@@ -25,7 +25,9 @@ public static class User
         mainCompany.AddSubsidiary(company2);
         mainCompany.AddSubsidiary(company3);
         
+        Console.WriteLine(5+6+2+4+8+7+9+6+3+1+0+2+4);
         Console.WriteLine("There are " + mainCompany.CountCars() + " cars in the company.");
+        Console.WriteLine("The company has a total car power of " + mainCompany.GetTotalPower());
         return 0;
     }
 }
