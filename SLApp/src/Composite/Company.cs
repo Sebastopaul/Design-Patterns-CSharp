@@ -6,14 +6,11 @@ namespace SLApp.Composite;
 public class Company
 {
     private readonly IList<Company> _subsidiaries = new List<Company>();
-    private readonly IList<Car> _cars = new List<Car>();
+    private readonly int _cars;
 
     public Company(int cars)
     {
-        for (var i = 0; i < cars; i++)
-        {
-            _cars.Add(new Car());
-        }
+        _cars = cars;
     }
     
     public void AddSubsidiary(Company subsidiary)
@@ -23,6 +20,6 @@ public class Company
     
     public int CountCars()
     {
-        return _cars.Count + _subsidiaries.Sum(subsidiary => subsidiary.CountCars());
+        return _cars + _subsidiaries.Sum(subsidiary => subsidiary.CountCars());
     }
 }
