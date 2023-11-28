@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Repo\\SLApp\\SLApp.csproj": {}
+    "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\SLApp\\SLApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Repo\\SLApp\\SLApp.csproj": {
+    "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\SLApp\\SLApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Repo\\SLApp\\SLApp.csproj",
+        "projectUniqueName": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\SLApp\\SLApp.csproj",
         "projectName": "SLApp",
-        "projectPath": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Repo\\SLApp\\SLApp.csproj",
+        "projectPath": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\SLApp\\SLApp.csproj",
         "packagesPath": "C:\\Users\\sebay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Repo\\SLApp\\obj\\",
+        "outputPath": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\SLApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
