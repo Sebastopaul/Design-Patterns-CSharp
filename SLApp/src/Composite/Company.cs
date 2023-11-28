@@ -6,7 +6,7 @@ namespace SLApp.Composite;
 public class Company
 {
     private readonly IList<Company> _subsidiaries = new List<Company>();
-    private readonly int _cars;
+    private int _cars;
 
     public Company(int cars)
     {
@@ -16,6 +16,11 @@ public class Company
     public void AddSubsidiary(Company subsidiary)
     {
         _subsidiaries.Add(subsidiary);
+    }
+
+    public void AddCar()
+    {
+        _cars++;
     }
     
     public int CountCars()

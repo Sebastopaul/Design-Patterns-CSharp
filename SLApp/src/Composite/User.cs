@@ -21,11 +21,12 @@ public static class User
         company3.AddSubsidiary(new Company(0));
         company3.AddSubsidiary(new Company(2));
         company3.AddSubsidiary(new Company(4));
+        company3.AddCar();
         mainCompany.AddSubsidiary(company1);
         mainCompany.AddSubsidiary(company2);
         mainCompany.AddSubsidiary(company3);
         
-        Console.WriteLine(5+6+2+4+8+7+9+6+3+1+0+2+4);
+        Console.WriteLine(5+6+2+4+8+7+9+6+3+1+0+2+4+1);
         Console.WriteLine("There are " + mainCompany.CountCars() + " cars in the company.");
         return 0;
     }
