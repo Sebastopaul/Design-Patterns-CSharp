@@ -1,13 +1,13 @@
 using System;
 
-namespace SLApp.AnotherUnknownPattern;
+namespace SLApp.Decorator;
 
-public class FormImplApplet : IFormImpl
+public class FormImplHtml : IFormImpl
 {
 
   public void DrawText(string text)
   {
-    Console.WriteLine("Applet : " + text);
+    Console.WriteLine("HTML : " + text);
   }
 
   public string ManageInputArea()

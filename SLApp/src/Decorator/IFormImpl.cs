@@ -1,4 +1,4 @@
-namespace SLApp.AnotherUnknownPattern;
+namespace SLApp.Decorator;
 
 public interface IFormImpl
 {

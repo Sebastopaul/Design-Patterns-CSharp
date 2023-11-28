@@ -1,6 +1,6 @@
 using System;
 
-namespace SLApp.AnotherUnknownPattern;
+namespace SLApp.Decorator;
 
 public class User
 {
