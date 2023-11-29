@@ -1,4 +1,5 @@
 ﻿using System.Data.Common;
+using System.Data.SqlTypes;
 using Npgsql;
 
 namespace sl_app_tp_29112023;
@@ -27,6 +28,13 @@ public class Database
     public DbDataReader FindObject(string cmd)
     {
         return (new NpgsqlCommand(cmd, _connection).ExecuteReader());
+    }
+    
+    public string FindObjectId(string cmd)
+    {
+        var obj = new NpgsqlCommand(cmd, _connection).ExecuteScalar();
+
+        return obj?.ToString() ?? throw new InvalidOperationException();
     }
 
     public int AddObject(string cmd)

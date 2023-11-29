@@ -1,6 +1,6 @@
 ﻿namespace sl_app_tp_29112023;
 
-internal static class Customer
+internal static class Program
 {
     public static void Main(string[] args)
     {
