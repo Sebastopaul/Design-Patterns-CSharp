@@ -1,0 +1,15 @@
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\bin\Debug\net7.0\sl-app-tp-29112023.exe
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\bin\Debug\net7.0\sl-app-tp-29112023.deps.json
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\bin\Debug\net7.0\sl-app-tp-29112023.runtimeconfig.json
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\bin\Debug\net7.0\sl-app-tp-29112023.dll
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\bin\Debug\net7.0\sl-app-tp-29112023.pdb
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.csproj.AssemblyReference.cache
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.AssemblyInfoInputs.cache
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.AssemblyInfo.cs
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.csproj.CoreCompileInputs.cache
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.dll
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\refint\sl-app-tp-29112023.dll
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.pdb
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\sl-app-tp-29112023.genruntimeconfig.cache
+C:\Users\sebay\Isitech\Design_Patterns_C#\Design-Patterns-CSharp\sl-app-tp-29112023\obj\Debug\net7.0\ref\sl-app-tp-29112023.dll
