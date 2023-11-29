@@ -4,11 +4,12 @@ namespace sl_app_tp_29112023;
 
 public class Writer
 {
-    private readonly IList<Book> _books = new List<Book>();
     private readonly string _name;
+    private readonly IList<Book> _books = new List<Book>();
 
-    public Writer(string name)
+    public Writer(string name, int countryId)
     {
+        Database.Instance().AddObject("INSERT INTO writer(name, country_id) VALUES(" + name + ", " + countryId + ")");
         _name = name;
     }
 

@@ -1,14 +1,14 @@
 ﻿CREATE TABLE IF NOT EXISTS languages
 (
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,
     PRIMARY KEY(id)
 );
 
 CREATE TABLE IF NOT EXISTS country
 (
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS country_languages
 CREATE TABLE IF NOT EXISTS genres
 (
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,
     PRIMARY KEY(id)
 );
 
@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS writer_genres
 CREATE TABLE IF NOT EXISTS writer
 (
     id INT GENERATED ALWAYS AS IDENTITY,
-    name VARCHAR(255) NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,
     country_id INT NOT NULL,
     PRIMARY KEY(id),
     CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id)
@@ -62,5 +62,6 @@ CREATE TABLE IF NOT EXISTS book
     CONSTRAINT fk_country FOREIGN KEY(country_id) REFERENCES country(id),
     CONSTRAINT fk_language FOREIGN KEY(language_id) REFERENCES languages(id),
     CONSTRAINT fk_genres FOREIGN KEY(genres_id) REFERENCES genres(id),
-    CONSTRAINT fk_writer FOREIGN KEY(writer_id) REFERENCES writer(id)
+    CONSTRAINT fk_writer FOREIGN KEY(writer_id) REFERENCES writer(id),
+    CONSTRAINT uniq_writer_book UNIQUE (name, writer_id);
 );
