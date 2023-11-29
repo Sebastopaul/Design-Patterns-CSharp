@@ -14,6 +14,7 @@ public class NovelWriter: Writer
             throw new KeyNotFoundException("This language is spoken in this country.");
         var book = new BookNovel(name, content, this, language, genre);
         Books.Add(book);
+        NotifySubscribers(book);
         return book;
     }
 }

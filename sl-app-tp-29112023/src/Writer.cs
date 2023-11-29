@@ -44,7 +44,7 @@ public abstract class Writer
         return _genres.Any(savedGenre => savedGenre.GetName() == genre.GetName());
     }
 
-    private void NotifySubscribers(Book book)
+    protected void NotifySubscribers(Book book)
     {
         foreach (var subscriber in _subscribers)
         {
