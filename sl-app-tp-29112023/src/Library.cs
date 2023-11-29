@@ -3,7 +3,7 @@
 public class Library
 {
     private readonly string _name;
-    private IList<Book> _books = new List<Book>();
+    private readonly IList<Book> _books = new List<Book>();
 
     private static Library? _instance = null;
 
@@ -15,6 +15,17 @@ public class Library
     public static Library Instance(string name)
     {
         return _instance ??= new Library(name);
+    }
+
+    public int Run()
+    {
+        Console.WriteLine("Welcome to " + _name + " library !");
+        while (Console.ReadLine() != "exit")
+        {
+            Console.WriteLine("Are you looking for a writer (1), a genre (2), a release date (3), a specific language (4), or an area (5) ?");
+        }
+
+        return 0;
     }
 
     public string GetName()

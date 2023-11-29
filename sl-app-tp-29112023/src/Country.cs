@@ -6,16 +6,16 @@ public class Country: BookComponent
     
     public Country(string name): base(name)
     {
-        Database.Instance().AddObject("INSERT INTO country(name) VALUES(" + name + ")");
+        //Database.Instance().AddObject("INSERT INTO country(name) VALUES(" + name + ")");
     }
     
     public void AddCountry(Language language)
     {
-        var db = Database.Instance();
-        var countryId = int.Parse(db.FindObjectId("SELECT id FROM country WHERE name = " + GetName()));
-        var languageId = int.Parse(db.FindObjectId("SELECT id FROM language WHERE name = " + language.GetName()));
-        
-        db.AddObject("INSERT INTO country_language(country_id, language_id) VALUES(" + countryId + ", " + languageId + ")");
+        //var db = Database.Instance();
+        //var countryId = int.Parse(db.FindObjectId("SELECT id FROM country WHERE name = " + GetName()));
+        //var languageId = int.Parse(db.FindObjectId("SELECT id FROM language WHERE name = " + language.GetName()));
+        //
+        //db.AddObject("INSERT INTO country_language(country_id, language_id) VALUES(" + countryId + ", " + languageId + ")");
         language.AddCountry(this);
         _languages.Add(language);
     }

@@ -6,7 +6,7 @@ public class Genre: BookComponent
 
     public Genre(string name): base(name)
     {
-        Database.Instance().AddObject("INSERT INTO genre(name) VALUES(" + name + ")");
+        //Database.Instance().AddObject("INSERT INTO genre(name) VALUES(" + name + ")");
     }
 
     public void AddWriter(Writer writer)

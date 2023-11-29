@@ -2,11 +2,11 @@
 
 public class Language: BookComponent
 {
-    public readonly IList<Country> _countries = new List<Country>();
+    private readonly IList<Country> _countries = new List<Country>();
     
     protected Language(string name): base(name)
     {
-        Database.Instance().AddObject("INSERT INTO language(name) VALUES(" + name + ")");
+        //Database.Instance().AddObject("INSERT INTO language(name) VALUES(" + name + ")");
     }
 
     public void AddCountry(Country country)
