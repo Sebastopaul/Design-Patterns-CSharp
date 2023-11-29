@@ -1,0 +1,37 @@
+﻿version: '3'
+services:
+  app:
+    image: sl-app-tp-29112023
+    build:
+      context: .
+      dockerfile: Dockerfile
+    links:
+      - db
+    restart: always
+    environment:
+      - DB_HOSTNAME=db
+    networks:
+      - net
+    
+
+  db:
+    image: postgres:latest
+    restart: always
+    ports:
+      - "3306:3306"
+    networks:
+      - net
+    volumes:
+      - ./schema.sql:/docker-entrypoint-initdb.d/schema.sql
+      - db-data:/usr/share/db
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=postgres
+
+volumes:
+  db-data:
+    driver: local
+
+networks:
+  net:
+    driver: bridge
