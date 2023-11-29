@@ -60,7 +60,7 @@ public class Library
     public int Run(Customer customer)
     {
         Console.WriteLine("Welcome to " + _name + " library !");
-        Console.WriteLine("Are you looking for a writer (1), a genre (2), a specific language (3), or an area (4) ?");
+        Console.WriteLine("Are you looking for a writer (1) or a book (2) ?");
         
 
         return 0;
