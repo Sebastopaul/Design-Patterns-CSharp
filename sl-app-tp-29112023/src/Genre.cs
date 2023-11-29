@@ -2,8 +2,15 @@
 
 public class Genre: BookComponent
 {
-    protected Genre(string name): base(name)
+    private readonly IList<Writer> _writers = new List<Writer>();
+
+    public Genre(string name): base(name)
     {
         Database.Instance().AddObject("INSERT INTO genre(name) VALUES(" + name + ")");
+    }
+
+    public void AddWriter(Writer writer)
+    {
+        _writers.Add(writer);
     }
 }

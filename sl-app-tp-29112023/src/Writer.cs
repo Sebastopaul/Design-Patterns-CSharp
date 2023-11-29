@@ -28,16 +28,26 @@ public class Writer
     private void AddGenre(Genre genre)
     {
         var db = Database.Instance();
-        var writerId = int.Parse(db.FindObjectId("SELECT id FROM writer WHERE name = " + this.GetName()));
+        var writerId = int.Parse(db.FindObjectId("SELECT id FROM writer WHERE name = " + GetName()));
         var genreId = int.Parse(db.FindObjectId("SELECT id FROM genre WHERE name = " + genre.GetName()));
         
-        db.AddObject("INSERT INTO writer_language(country_id, genre_id) VALUES(" + writerId + ", " + genreId + ")");
+        db.AddObject("INSERT INTO writer_genre(country_id, genre_id) VALUES(" + writerId + ", " + genreId + ")");
+        genre.AddWriter(this);
         _genres.Add(genre);
     }
 
-    public void WriteBook(string name, string content)
+    public void WriteBook(string name, string content, Genre genre, Language language)
     {
-        _books.Add(new BookNovel(name, content, this));
+        if (! HasWrittenGenre(genre))
+            AddGenre(genre);
+        if (!_country.IsLanguageUsed(language))
+            throw new KeyNotFoundException("This language is spoken in this country.");
+        _books.Add(new BookNovel(name, content, this, language, genre));
+    }
+
+    private bool HasWrittenGenre(BookComponent genre)
+    {
+        return _genres.Any(savedGenre => savedGenre.GetName() == genre.GetName());
     }
     
     public Book GetBook(string name)
@@ -49,5 +59,10 @@ public class Writer
         }
 
         throw new KeyNotFoundException("Writer " + _name + " hasn't written the book " + name + '.');
+    }
+
+    public Country GetCountry()
+    {
+        return _country;
     }
 }

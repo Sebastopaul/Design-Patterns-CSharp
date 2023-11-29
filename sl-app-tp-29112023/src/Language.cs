@@ -2,7 +2,7 @@
 
 public class Language: BookComponent
 {
-    private readonly IList<Country> _countries = new List<Country>();
+    public readonly IList<Country> _countries = new List<Country>();
     
     protected Language(string name): base(name)
     {

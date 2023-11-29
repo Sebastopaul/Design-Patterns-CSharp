@@ -52,6 +52,7 @@ CREATE TABLE IF NOT EXISTS book
 (
     id INT GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(255) NOT NULL,
+    type VARCHAR(255) NOT NULL,
     content VARCHAR(1024) NOT NULL,
     language_id INT NOT NULL,
     writer_id INT NOT NULL,
@@ -60,5 +61,5 @@ CREATE TABLE IF NOT EXISTS book
     CONSTRAINT fk_language FOREIGN KEY(language_id) REFERENCES language(id),
     CONSTRAINT fk_genre FOREIGN KEY(genre_id) REFERENCES genre(id),
     CONSTRAINT fk_writer FOREIGN KEY(writer_id) REFERENCES writer(id),
-    CONSTRAINT uniq_writer_book UNIQUE (name, writer_id);
+    CONSTRAINT uniq_writer_book UNIQUE (name, type, writer_id);
 );
