@@ -4,7 +4,7 @@ public class Language: BookComponent
 {
     private readonly IList<Country> _countries = new List<Country>();
     
-    protected Language(string name): base(name)
+    public Language(string name): base(name)
     {
         //Database.Instance().AddObject("INSERT INTO language(name) VALUES(" + name + ")");
     }

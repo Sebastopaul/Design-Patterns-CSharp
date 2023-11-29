@@ -9,7 +9,7 @@ public class Country: BookComponent
         //Database.Instance().AddObject("INSERT INTO country(name) VALUES(" + name + ")");
     }
     
-    public void AddCountry(Language language)
+    public void AddLanguage(Language language)
     {
         //var db = Database.Instance();
         //var countryId = int.Parse(db.FindObjectId("SELECT id FROM country WHERE name = " + GetName()));

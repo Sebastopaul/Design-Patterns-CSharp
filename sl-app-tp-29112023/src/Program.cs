@@ -6,8 +6,9 @@ internal static class Program
     {
         var library = Library.Instance("Shields and Potatoes");
 
-        
-        
-        return library.Run();
+        Console.WriteLine("Please enter your name before entering the library : ");
+        var name = Console.ReadLine();
+
+        return library.Run(new Customer(name ?? throw new NullReferenceException("Error entering your name.")));
     }
 }

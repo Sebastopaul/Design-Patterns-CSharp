@@ -36,7 +36,7 @@ public abstract class Writer
         _genres.Add(genre);
     }
 
-    public abstract void WriteBook(string name, string content, Genre genre, Language language);
+    public abstract Book WriteBook(string name, string content, Genre genre, Language language);
 
     protected bool HasWrittenGenre(BookComponent genre)
     {

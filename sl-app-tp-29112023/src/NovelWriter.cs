@@ -6,12 +6,14 @@ public class NovelWriter: Writer
     {
     }
 
-    public override void WriteBook(string name, string content, Genre genre, Language language)
+    public override Book WriteBook(string name, string content, Genre genre, Language language)
     {
         if (! HasWrittenGenre(genre))
             AddGenre(genre);
         if (! GetCountry().IsLanguageUsed(language))
             throw new KeyNotFoundException("This language is spoken in this country.");
-        Books.Add(new BookNovel(name, content, this, language, genre));
+        var book = new BookNovel(name, content, this, language, genre);
+        Books.Add(book);
+        return book;
     }
 }
