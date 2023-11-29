@@ -9,7 +9,7 @@ internal static class Customer
         Console.WriteLine("Welcome to " + library.GetName() + " library !");
         while (Console.ReadLine() != "exit")
         {
-            
+            Console.WriteLine("Are you looking for a writer (1), a genre (2), a release date (3), a specific language (4), or an area (5) ?");
         }
     }
 }

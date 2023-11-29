@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "W+s/eSzFIcTnUAAFe+udF6gfwxsoNODnDBoWuXeeyAx8PQ+0r9l6EXwYfv+OFa9KCUm53xCFAFf6VGx2GzpVDQ==",
+  "dgSpecHash": "d78EAEh25g0tacJ4S4YmDuflMN6lzotuR9mzlwOHKOeo2OppyKXywHzizJB85LdjYKpBVv8xsZqjY4SlJhAdsg==",
   "success": true,
   "projectFilePath": "C:\\Users\\sebay\\Isitech\\Design_Patterns_C#\\Design-Patterns-CSharp\\sl-app-tp-29112023\\sl-app-tp-29112023.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\sebay\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\sebay\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\sebay\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

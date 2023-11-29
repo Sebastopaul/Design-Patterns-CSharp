@@ -2,7 +2,7 @@
 
 public class Library
 {
-    private string _name;
+    private readonly string _name;
     private IList<Book> _books = new List<Book>();
 
     private static Library? _instance = null;
