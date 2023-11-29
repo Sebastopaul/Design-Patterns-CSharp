@@ -8,6 +8,7 @@ public abstract class Writer
     private readonly Country _country;
     private readonly IList<Genre> _genres = new List<Genre>();
     protected readonly IList<Book> Books = new List<Book>();
+    private readonly IList<Customer> _subscribers = new List<Customer>();
 
     protected Writer(string name, Country country)
     {
@@ -41,6 +42,22 @@ public abstract class Writer
     protected bool HasWrittenGenre(BookComponent genre)
     {
         return _genres.Any(savedGenre => savedGenre.GetName() == genre.GetName());
+    }
+
+    private void NotifySubscribers(Book book)
+    {
+        foreach (var subscriber in _subscribers)
+        {
+            subscriber.Notify(this, book);
+        }
+    }
+
+    public void Subscribe(Customer subscriber)
+    {
+        if (!_subscribers.Contains(subscriber))
+        {
+            _subscribers.Add(subscriber);
+        }
     }
     
     public Book GetBook(string name)
