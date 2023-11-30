@@ -11,7 +11,7 @@ Il s'agit de deux projets différents.
 ### Travail
 
 - [Dépôt NestJS pour les Decorators](https://github.com/Sebastopaul/Nest-Quick-Init)
-- [Dossier Drive pour les diagrammes](https://drive.google.com/file/d/1ifb5kxjPASbOVSvS1WrpsEBgfXELEDno/view?usp=sharing) (il contient également les diagrammes pour le TP du 29/11/2023, ceux-là sont préfixés de `TP`)
+- [Dossier Drive pour les diagrammes](https://drive.google.com/drive/folders/11sYQc0sPgxFl1HlEVkApqzat4RRBxS29?usp=sharing) (il contient également les diagrammes pour le TP du 29/11/2023, ceux-là sont préfixés de `TP`)
 
 ### Sites pratiques
 
