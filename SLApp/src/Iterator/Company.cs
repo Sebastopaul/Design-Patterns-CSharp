@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace SLApp.Iterator;
 
@@ -16,7 +17,7 @@ public class Company: IComponent
         _children.Remove(component);
     }
 
-    public IList<IComponent> GetChildren()
+    public IEnumerable<IComponent> GetChildren()
     {
         return _children;
     }
@@ -26,11 +27,8 @@ public class Company: IComponent
         return new Iterator(this);
     }
     
-    public void Execute()
+    public int Execute()
     {
-        foreach (var component in _children)
-        {
-            component.Execute();
-        }
+        return _children.Sum(component => component.Execute());
     }
 }

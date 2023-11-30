@@ -1,12 +1,22 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.Collections;
+using System.Collections.Generic;
 
 namespace SLApp.Iterator;
 
-public class Car: Component
+public class Car: IComponent
 {
-    public void Execute()
+    public IIterator CreateIterator()
     {
-        Console.WriteLine("Beep beep I'm a sheep.");
+        return new Iterator(this);
+    }
+    
+    public IEnumerable<IComponent> GetChildren()
+    {
+        return new List<IComponent>();
+    }
+    
+    public int Execute()
+    {
+        return 1;
     }
 }
