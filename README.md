@@ -6,6 +6,9 @@ Le dossier [SLApp](./SLApp/) contient des dossiers pour certains patterns vus en
 Le dossier [sl-app-tp-29112023](./sl-app-tp-29112023/) contient le TP du mercredi 29/11/2023.
 Il s'agit de deux projets différents.
 
+Tout ce qui concerne l'évaluation se trouve dans le dossier [Eval](./Eval/).
+Les diagrammes se trouvent dans le dossier [Diagrams](./Eval/Diagrams/).
+
 ## Liens
 
 ### Travail
